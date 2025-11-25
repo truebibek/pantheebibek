@@ -196,6 +196,7 @@ nav {
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .profile-img-placeholder {
@@ -490,4 +491,5 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+
 }
