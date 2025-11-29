@@ -42,9 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
+            // Formspree will handle the submission
+            // We'll keep the alert for user feedback
+            setTimeout(() => {
+                alert('Thank you for your message! I will get back to you soon.');
+                contactForm.reset();
+            }, 1000);
         });
     }
 
